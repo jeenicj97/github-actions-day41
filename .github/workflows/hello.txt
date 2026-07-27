@@ -1,0 +1,1 @@
+echo "I am content. I am blessed. I am grateful for everything."
