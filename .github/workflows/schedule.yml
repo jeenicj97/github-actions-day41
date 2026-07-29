@@ -2,7 +2,7 @@ name: Daily Workflow
 
 on:
   schedule:
-    - cron: "51 11 * * *"
+    - cron: "55 11 * * *"
 
 jobs:
   daily-job:
