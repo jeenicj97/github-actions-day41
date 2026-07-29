@@ -3,6 +3,8 @@ name: Daily Workflow
 on:
   schedule:
     - cron: "* * * * *"
+  workflow_dispatch:
+    
 jobs:
   daily-job:
     runs-on: ubuntu-latest
