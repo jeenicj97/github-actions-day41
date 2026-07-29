@@ -2,7 +2,7 @@ name: Daily Workflow
 
 on:
   schedule:
-    - cron: "0 9 * * *"
+    - cron: "* * * * *"
 jobs:
   daily-job:
     runs-on: ubuntu-latest
