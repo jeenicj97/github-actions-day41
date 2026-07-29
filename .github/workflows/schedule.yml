@@ -1,0 +1,13 @@
+name: Daily Workflow
+
+on:
+  schedule:
+    - cron: "51 11 * * *"
+
+jobs:
+  daily-job:
+    runs-on: ubuntu-latest
+
+
+    steps:
+      - run: echo "Running at scheduled time"
