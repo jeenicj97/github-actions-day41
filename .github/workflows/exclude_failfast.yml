@@ -34,6 +34,5 @@ jobs:
       - name: Print Python version
         run: python --version
 
-      - name: Force failure on Python 3.11
-        if: matrix.python-version == '3.11'
+      - name: Fail intentionally
         run: exit 1
