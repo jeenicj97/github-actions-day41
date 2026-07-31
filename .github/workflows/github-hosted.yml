@@ -1,0 +1,39 @@
+name: GitHub Hosted Runners
+
+on:
+  workflow_dispatch:
+
+jobs:
+
+  ubuntu:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Print Runner Details
+        run: |
+          echo "OS: $(uname -a)"
+          echo "Hostname: $(hostname)"
+          echo "Current User: $(whoami)"
+
+    windows:
+      runs-on: windows-latest
+
+      steps:
+        - name: Print Runner Details
+          run: |
+            Write-Host "OS:"
+            systeminfo | findstr /B /C: "OS Name"
+            Write-Host "Hostname:"
+            hostname
+            Write-Host "Current User"
+            whoami
+
+    macos:
+      runs-on: macos-latest
+
+      steps:
+        - name: Print Runner Details
+          run: |
+            echo "OS: $(uname -a)"
+            echo "Hostname $(hostname)"
+            echo "Current User $(whoami)"
