@@ -22,7 +22,7 @@ jobs:
       - name: Print Runner Details
         run: |
           Write-Host "OS:"
-          systeminfo | findstr /B /C: "OS Name"
+          systeminfo | findstr /B /C:"OS Name"
           Write-Host "Hostname:"
           hostname
           Write-Host "Current User"
